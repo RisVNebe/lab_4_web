@@ -1,0 +1,154 @@
+.grtopic
+  display grid
+  grid-template-columns 1fr
+  grid-template-rows 1fr 1fr
+  grid-template-areas "elmenu-1"    "elname"
+  background-image url('/img/background_1.jpg')
+
+.container_menu_el
+  display inline-flex
+  justify-content center
+  vertical-align middle
+  width 30%
+  margin auto
+  &:hover
+    opacity 0.5
+  a
+    color azure
+
+.elmenu_1
+  grid-area elmenu-1
+  text-align center
+  color white
+
+.elmenu_2
+  grid-area elmenu-2
+  text-align center
+  color white
+
+.container_menu
+  display flex
+  justify-content center
+  vertical-align middle
+  height 100%
+
+.elname
+  grid-area elname
+  text-align center
+  color white
+
+.elhead
+  height 10vh
+  text-align right
+  background-color lightgray
+  input
+    width 40%
+    height 2.5vh
+    margin-top 4vh
+
+.grbody
+  display grid
+  grid-template-columns 40vw 40vw
+  grid-template-areas "elbody_1 grbody_r"
+  margin-top 1vh
+  justify-content center
+
+.grbody_r
+  display grid
+  grid-area grbody_r
+  grid-template-columns 40vw 
+  grid-template-areas "elbody_2" "elbody_3""elbody_4""elbody_5"
+
+.elbody_1
+  grid-area elbody_1
+  
+
+
+.elbody_2
+  grid-area elbody_2
+
+.elbody_3
+  grid-area elbody_3
+
+.elbody_4
+  grid-area elbody_4
+
+.elbody_5
+  grid-area elbody_5
+
+h2
+  width 45%
+  display inline-block
+
+.img_set
+  height auto
+  width 54%
+  display inline-block
+  img
+    display inline-block
+    height 30%
+    width 100%
+
+.text_r
+  width 100%
+  display inline-block
+
+.text
+  width 45%
+  vertical-align top
+  display inline-block
+
+.border
+  border 2% solid black
+
+.bottom
+  width 100%
+  height 3%
+  text-align center
+  vertical-align middle
+  border-top 1px solid black
+  display flex
+
+.bottom_1
+  margin-right auto
+  margin-left 1%
+  padding-top 2.5vh
+
+.bottom_2
+  margin-right 1%
+  margin-left auto
+  padding-top 2.5vh
+
+@media (max-width:1024px)
+  .grtopic
+    display grid
+    grid-template-areas "elmenu-1"   "elname"
+    background-image url('')
+  .container_menu
+    display grid
+    grid-template-columns 1fr 1fr
+    grid-template-rows 1fr 1fr
+  .container_menu_el
+    margin auto
+  .grbody
+    display grid
+    grid-template-columns 1fr
+    grid-template-areas "elbody_1""grbody_r"
+    margin-top 1vh
+    justify-content center
+    grid-gap 1%
+    margin-bottom 3%
+  .grbody_r
+    display grid
+    grid-template-columns 1fr
+    grid-template-rows 1fr 1fr 1fr 1fr
+    grid-template-areas "elbody_2""elbody_3""elbody_4""elbody_5"
+    margin-top 1vh
+    justify-content center
+    grid-gap 1%
+    grid-area grbody_r
+    margin-bottom 3%
+  .elmenu_1
+    color black
+  .elname
+    color black
